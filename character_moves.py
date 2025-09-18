@@ -5,11 +5,27 @@ open_canvas()
 character = load_image('character.png')
 grass = load_image('grass.png')
 
+def R_moveLeft():
+    pass
+
+def R_moveRight():
+    pass
+
+def R_moveUP():
+    pass
+
+def R_moveDown():
+    pass
+
+
 def moveRectangle():
     print("move Rectangle")
-    clear_canvas_now()
-    character.draw_now(400, 90)
-    grass.draw_now(400, 30)
+
+    R_moveLeft()
+    R_moveUP()
+    R_moveRight()
+    R_moveDown()
+
     pass
 
 def moveTriangle():
