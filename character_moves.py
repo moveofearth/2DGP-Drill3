@@ -15,45 +15,56 @@ def draw_scene(x, y):
 
 
 
-def R_moveLeft():
+def moveLeft():
     for i in range(780, 10, -2):
         draw_scene(i, 570)
     pass
 
-def R_moveRight_1():
+def moveRight_1():
     for i in range (10, 400, 2):
         draw_scene(i, 90)
     pass
 
-def R_moveRight_2():
+def moveRight_2():
     for i in range (400, 780, 2):
         draw_scene(i, 90)
     pass
 
-def R_moveUP():
+def moveUP():
     for i in range (90, 570, 2):
         draw_scene(780, i)
     pass
 
-def R_moveDown():
+def moveDown():
     for i in range (570, 90, -2):
         draw_scene(10, i)
+    pass
+
+def moveLUP():
+    pass
+
+def moveRDOWN():
     pass
 
 
 def moveRectangle():
     print("move Rectangle")
 
-    R_moveRight_2()
-    R_moveUP()
-    R_moveLeft()
-    R_moveDown()
-    R_moveRight_1()
+    moveRight_2()
+    moveUP()
+    moveLeft()
+    moveDown()
+    moveRight_1()
 
     pass
 
 def moveTriangle():
     print("move Triangle")
+
+    moveRight_2()
+    moveLUP()
+    moveRDOWN()
+
     pass
 
 def moveCircle():
