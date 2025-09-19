@@ -87,7 +87,7 @@ def moveLDOWN():
 
 
 def moveRectangle():
-    print("move Rectangle")
+    #print("move Rectangle")
 
     moveRight_2()
     moveUP()
@@ -98,7 +98,7 @@ def moveRectangle():
     pass
 
 def moveTriangle():
-    print("move Triangle")
+    #print("move Triangle")
 
     moveRight_2()
     moveLUP()
@@ -108,7 +108,7 @@ def moveTriangle():
     pass
 
 def moveCircle():
-    print("move Circle")
+    #print("move Circle")
 
     for i in range(270, 360):
         radian = math.radians(i)
