@@ -1,4 +1,5 @@
 from pico2d import *
+import math
 
 open_canvas()
 
@@ -41,9 +42,47 @@ def moveDown():
     pass
 
 def moveLUP():
+    startX = 780
+    startY = 90
+    endX = 400
+    endY = 570
+
+    dx = endX - startX
+    dy = endY - startY
+
+    step_count = int(dy / 5) + 1
+    step_size_y = dy / step_count
+    step_size_x = dx / step_count
+
+    currentX = startX
+    currentY = startY
+
+    for i in range(step_count + 1):
+        currentX = startX + (step_size_x * i)
+        currentY = startY + (step_size_y * i)
+        draw_scene(int(currentX), int(currentY))
     pass
 
-def moveRDOWN():
+def moveLDOWN():
+    startX = 400
+    startY = 570
+    endX = 10
+    endY = 90
+
+    dx = endX - startX
+    dy = endY - startY
+
+    step_count = int(abs(dy) / 5) + 1
+    step_size_y = dy / step_count
+    step_size_x = dx / step_count
+
+    currentX = startX
+    currentY = startY
+
+    for i in range(step_count + 1):
+        currentX = startX + (step_size_x * i)
+        currentY = startY + (step_size_y * i)
+        draw_scene(int(currentX), int(currentY))
     pass
 
 
@@ -63,7 +102,8 @@ def moveTriangle():
 
     moveRight_2()
     moveLUP()
-    moveRDOWN()
+    moveLDOWN()
+    moveRight_1()
 
     pass
 
