@@ -109,6 +109,19 @@ def moveTriangle():
 
 def moveCircle():
     print("move Circle")
+
+    for i in range(270, 360):
+        radian = math.radians(i)
+        cx = 400 + 225 * math.cos(radian)
+        cy = 316 + 225 * math.sin(radian)
+        draw_scene(cx, cy)
+
+    for i in range(0, 270):
+        radian = math.radians(i)
+        cx = 400 + 225 * math.cos(radian)
+        cy = 316 + 225 * math.sin(radian)
+        draw_scene(cx, cy)
+
     pass
 
 while True:
